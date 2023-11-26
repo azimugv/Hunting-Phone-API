@@ -12,11 +12,61 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!-- Header Start -->
     <header>
       <h1 class="text-6xl text-center bg-gray-400 p-6 text-white">
         Hunting Phone API
       </h1>
     </header>
+    <!-- Header End -->
+    <!-- Main Start -->
+    <main class="max-w-7xl mx-auto">
+      <!-- Search Section Start -->
+      <section class="text-center p-6 bg-emerald-100 rounded-xl my-2">
+        <input
+          type="text"
+          placeholder="Type here"
+          class="input input-bordered input-accent w-full max-w-xs"
+        />
+        <button class="btn btn-accent text-white">Search</button>
+      </section>
+      <!-- Search Section End -->
+      <!-- Loading Section Start -->
+      <div class="text-center text-accent my-3">
+        <span class="loading loading-dots loading-lg"></span>
+      </div>
+      <!-- Loading Section End -->
+      <!-- Search Result Section Start -->
+      <div class="grid columns-1 md:columns-2 lg:columns-3 gap-4 p-4 my-4">
+        <!-- Phone Card Item -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Search Result Section End -->
+      <!-- Load More Result Section Start -->
+      <div class="text-center text-accent my-3">
+        <button class="btn btn-accent text-white">Load More</button>
+      </div>
+      <!-- Load More Result Section End -->
+    </main>
+    <!-- Main End -->
+    <!-- Script Start -->
+
     <script src="/js/phone.js"></script>
+
+    <!-- Script End -->
   </body>
 </html>
