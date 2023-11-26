@@ -35,7 +35,7 @@
       </section>
       <!-- Search Section End -->
       <!-- Loading Section Start -->
-      <div class="text-center text-accent my-3">
+      <div class="text-center text-accent my-3 hidden" id="loadSpinner">
         <span class="loading loading-dots loading-lg"></span>
       </div>
       <!-- Loading Section End -->
@@ -50,8 +50,10 @@
       </section>
       <!-- Search Result Section End -->
       <!-- Load More Result Section Start -->
-      <div class="text-center text-accent my-3">
-        <button class="btn btn-accent text-white">Load More</button>
+      <div class="text-center text-accent my-3 hidden" id="loadMore">
+        <button onclick="handleShowAll()" class="btn btn-accent text-white">
+          Load More
+        </button>
       </div>
       <!-- Load More Result Section End -->
     </main>
