@@ -1,6 +1,6 @@
 //Loading Data From Server
 
-const loadPhone = async (searchTerm, isShowAll) => {
+const loadPhone = async (searchTerm = 13, isShowAll) => {
   const res = await fetch(
     `https://openapi.programming-hero.com/api/phones?search=${searchTerm}`
   );
@@ -9,6 +9,7 @@ const loadPhone = async (searchTerm, isShowAll) => {
 
   displayAllPhone(allPhone, isShowAll);
 };
+loadPhone();
 //Display Loaded Data From Server
 const displayAllPhone = (allPhone, isShowAll) => {
   const allPhoneContainer = document.getElementById("allPhoneContainer");
