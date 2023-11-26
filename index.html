@@ -24,11 +24,14 @@
       <!-- Search Section Start -->
       <section class="text-center p-6 bg-emerald-100 rounded-xl my-2">
         <input
+          id="searchText"
           type="text"
           placeholder="Type here"
           class="input input-bordered input-accent w-full max-w-xs"
         />
-        <button class="btn btn-accent text-white">Search</button>
+        <button onclick="handlePhoneSearch()" class="btn btn-accent text-white">
+          Search
+        </button>
       </section>
       <!-- Search Section End -->
       <!-- Loading Section Start -->
@@ -37,24 +40,14 @@
       </div>
       <!-- Loading Section End -->
       <!-- Search Result Section Start -->
-      <div class="grid columns-1 md:columns-2 lg:columns-3 gap-4 p-4 my-4">
-        <!-- Phone Card Item -->
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
+      <section>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 my-4"
+          id="allPhoneContainer"
+        >
+          <!-- Phone Card Item -->
         </div>
-      </div>
+      </section>
       <!-- Search Result Section End -->
       <!-- Load More Result Section Start -->
       <div class="text-center text-accent my-3">
